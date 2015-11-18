@@ -94,7 +94,7 @@ for (is in loop_sub){
   }
 }
 # Finally merge df and temp
-fin <- data.frame(cbind(df,temp))
+fin <- cbind(df,temp)
 
 # Write into file
 write.table(fin, file="final_table.txt", row.names = FALSE)
