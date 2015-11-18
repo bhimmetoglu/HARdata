@@ -26,4 +26,4 @@ All the data is contained in the folder UCI HAR Dataset. The folder contains sev
 * Folder test: Basically the same with folder train (in file names train is replaced with test), just for test cases. There are only 9 levels in subject_test.txt (since only %30 of subjects are for test, while %70 for train), and there are 2947 measurements.
 
 #### Processed Data
-
+The data is processed by first reading the data sets in test and train folders, and subsetting the variables that contain only the mean and standard deviation (std) variables. After subsetting, each row is matched to the corresponding (subject,activity) pair, and saved in a data frame. Then these data frames (extracted and subsetted from the train and test folders) are merged into a single one. This single data frame contains all the measurements for each (subject,activity) pair. The final step was to compute the average of all variables (columns) for each (subject,activity) pair and save it into a new data frame (saved in final_table.txt). This final data contains 180 rows (30 subjects times 6 activities) and the averages of all the subsetted variables (mean and std) in its columns.
