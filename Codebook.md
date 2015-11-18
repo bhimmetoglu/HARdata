@@ -1,7 +1,7 @@
 # Code Book for HARdata
 
 #### Experimental design and background
-Explain how data is obtained here
+Experiments are done for 30 subjects with ages ranging from 19-48 years. Each subject performed 6 activities (listed below) wearing a smartphone. Using the smartphones accelerometer and gyroscope, 3-axial linear accerelarion and 3-axial angular velocities are measured (at 50Hz rate). %70 of subjects are randomly chosen to represerent training data, while rest (%30) were chosen to represent the test data. Further details of each measurement can be found in features_info.txt. 
 
 #### Raw Data
 All the data is contained in the folder UCI HAR Dataset. The folder contains several key text files:
@@ -12,7 +12,7 @@ All the data is contained in the folder UCI HAR Dataset. The folder contains sev
   * Variables with a prefix "f" refers to Fourier transformed ones (i.e. frequency domain).
   * '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. Mag is used for magnitudes (norm).
   * Variables containing BodyAcc, GravityAcc are in units of standard gravitational acceleration g (9.8 m/s^2).
-  * Variables containing Gyro are angular accelerations (units are radians/second).
+  * Variables containing Gyro are angular velocities (units are radians/second).
   * Variables containing Jerk are Jerk signals (time derivative of acceleration).
   * These measurements are used to estimate variables range from mean to angle (listed in features_info.txt). In total, there are 561 variables that are collected.
 
