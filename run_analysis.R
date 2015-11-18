@@ -97,4 +97,4 @@ for (is in loop_sub){
 fin <- cbind(df,temp)
 
 # Write into file
-write.table(fin, file="final_table.txt", row.names = FALSE)
+write.table(fin, file="final_table.txt", row.name = FALSE)
