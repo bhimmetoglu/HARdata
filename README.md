@@ -1,6 +1,8 @@
 # Description of HARdata
 
-This repo contains an R script (run_analysis.R) which reads Human Activity Recognition (HAR) Using Smartphones Dataset and combines the test and training data sets (contained in the zipped file). 
+This repo contains an R script (run_analysis.R) which reads Human Activity Recognition (HAR) Using Smartphones Dataset and combines the test and training data sets.
+
+The data can be downloaded from the following link as a zip archive: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The R script contains two functions that subsets the measurements on the mean and standard deviation for each measurement (all measurements are listed in features.txt), and then merges the corresponding data from test and training data sets. Finally, the R script transforms the merged data set into a tidy data set with the average of each measurement (mean and standard deviation) for each activity and each subject. 
 
